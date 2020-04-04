@@ -28,6 +28,13 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  flutter_bloc: ^3.2.0
+  data_connection_checker: ^0.3.4
+  dartz: ^0.8.9
+  equatable: ^1.1.1
+  graphql_flutter: ^3.0.0
+  graphql: ^3.0.0
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
