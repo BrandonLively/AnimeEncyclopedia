@@ -10,6 +10,7 @@ query
             perPage
         }
         media{
+          isAdult
           title{
             romaji
             english
