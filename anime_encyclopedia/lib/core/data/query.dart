@@ -1,7 +1,7 @@
 const String GET_TEST_ANIME = r'''
 query
 {
-    Page (page: 1, perPage: 2) {
+    Page (page: 1, perPage: 20) {
         pageInfo {
             total
             currentPage
@@ -10,6 +10,7 @@ query
             perPage
         }
         media{
+          id
           isAdult
           title{
             romaji

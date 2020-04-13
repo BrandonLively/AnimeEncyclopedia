@@ -2,7 +2,8 @@ import 'package:equatable/equatable.dart';
 import 'package:meta/meta.dart';
 
 class Anime extends Equatable{
-  final String title;
+  final String titleRomaji;
+  final String titleEnglish;
   final int ID;
   final Set<String> genres;
   final String coverImageUrl;
@@ -15,7 +16,8 @@ class Anime extends Equatable{
   final int avgScore;
 
   Anime({
-      @required this.title,
+      @required this.titleRomaji,
+      this.titleEnglish,
       @required this.ID,
       this.genres,
       this.coverImageUrl,
@@ -30,7 +32,8 @@ class Anime extends Equatable{
 
   @override
   List<Object> get props => [
-    title,
+    titleRomaji,
+    titleEnglish,
     ID,
     genres,
     coverImageUrl,
