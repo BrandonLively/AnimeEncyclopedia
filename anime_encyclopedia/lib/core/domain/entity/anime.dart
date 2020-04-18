@@ -4,6 +4,7 @@ import 'package:meta/meta.dart';
 class Anime extends Equatable{
   final String titleRomaji;
   final String titleEnglish;
+  final int localId;
   final int ID;
   final Set<String> genres;
   final String coverImageUrl;
@@ -18,6 +19,7 @@ class Anime extends Equatable{
   Anime({
       @required this.titleRomaji,
       this.titleEnglish,
+      this.localId,
       @required this.ID,
       this.genres,
       this.coverImageUrl,
